@@ -42,17 +42,7 @@ class _GameScreenState extends State<GameScreen> {
     ),
   );
 
-  void startTimer() {
-    timer = Timer.periodic(Duration(seconds: 1), (_) {
-      setState(() {
-        if (seconds > 0) {
-          seconds--;
-        } else {
-          stopTimer();
-        }
-      });
-    });
-  }
+
 
   void stopTimer() {
     resetTimer();
